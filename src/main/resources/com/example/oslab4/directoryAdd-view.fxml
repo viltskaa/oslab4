@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="103.0" prefWidth="200.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.oslab4.Controllers.directoryAddController">
+   <top>
+      <Label alignment="CENTER" maxWidth="1.7976931348623157E308" text="new Directory" BorderPane.alignment="CENTER" />
+   </top>
+   <center>
+      <VBox maxHeight="-Infinity" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets left="5.0" right="5.0" />
+         </BorderPane.margin>
+         <TextField fx:id="fileName" promptText="Name">
+            <VBox.margin>
+               <Insets />
+            </VBox.margin>
+         </TextField>
+      </VBox>
+   </center>
+   <bottom>
+      <HBox blendMode="DARKEN" fillHeight="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <Button fx:id="Create" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#OnCreate" text="Create" HBox.hgrow="ALWAYS" />
+         <Button fx:id="Cancel" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#OnClose" text="Cancel" HBox.hgrow="ALWAYS" />
+      </HBox>
+   </bottom>
+</BorderPane>
